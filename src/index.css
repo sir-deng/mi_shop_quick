@@ -178,3 +178,35 @@ li.nav_item {
 .nav_item a:hover{
     color: #ff6700;
 }
+.header_search{
+    float: right;
+    margin-top: 25px;
+}
+
+.header_search .search_form{
+    position: relative;
+    width: 296px;
+    height: 50px;
+    color: #333;
+    outline: 1px;
+    border: #333 solid 1px;
+}
+.header_search.search_btn{
+    width: 52px;
+    height: 50px;
+}
+.search_form .search_input{
+    position: absolute;
+    top: 0;
+    width: 223px;
+    height: 48px;
+    right: 51px;
+    padding: 0 10px;
+}
+.search_form .search_btn{
+    position: absolute;
+    width: 51px;
+    height: 50px;
+    top: 0;
+    right: 0;
+}
