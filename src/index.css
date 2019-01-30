@@ -1,0 +1,180 @@
+/*设置背景的大小增加滚动条 */
+body {
+    height: 3000px;
+    margin: 0;
+    color: #333333;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+top_container::before, body::after clearfix::before, clearfix::after {
+    content: "";
+    display: table;
+}
+
+top_container::after clearfix::after {
+    clear: both;
+}
+
+.top_bar {
+    height: 40px;
+    font-size: 12px;
+    background: #333;
+    /*border: black solid 1px;*/
+}
+
+.top_container {
+    margin: 0 auto;
+    height: 40px;
+    width: 1226px;
+    font-size: 0;
+}
+
+.top_nav a, .top_login a, .top_shop_car a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sep {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 0 0.5em;
+    color: #424242;
+}
+
+.top_nav a:hover {
+    color: #fff;
+}
+
+.top_nav {
+    float: left;
+}
+
+.top_shop_car, .top_login {
+    float: right;
+}
+
+.top_shop_car {
+    margin-left: 15px;
+}
+
+.top_login a:hover {
+    color: white;
+}
+
+.top_login a {
+    text-align: center;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.top_shop_car a:hover {
+    background-color: white;
+    color: #ff6700;
+}
+
+.top_shop_car span {
+    margin-left: -5px;
+}
+
+.top_login span {
+    margin: 0;
+}
+
+.top_mess {
+    font-size: 12px;
+}
+
+.top_mess_span {
+    padding: 0 10px;
+}
+
+.top_mess_span a {
+    padding: 0px;
+}
+
+.cart_mini {
+    text-align: center;
+    font-size: 12px;
+    color: #b0b0b0;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+}
+
+.header {
+    height: 100px;
+    z-index: 20;
+    position: relative;
+    /*border: black solid 1px;*/
+}
+
+.header_log {
+    margin-top: 22px;
+    float: left;
+    width: 62px;
+}
+.header_log a{
+
+
+}
+.header_container {
+    /*border: black solid 1px;*/
+    height: 100px;
+    position: relative;
+    width: 1226px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.header_href {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 55px;
+    height: 55px;
+    text-decoration: none;
+    text-align: left;
+    text-indent: -9999px;
+    background:  #ff6700 url("../img/logo.png") no-repeat 50% 50%;
+
+}
+.header_nav{
+    float: left;
+    width: 850px;
+    height: 100px;
+    /*border: red solid 1px;*/
+}
+ul.nav_list{
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 820px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+}
+li.nav_item {
+    float: left;
+}
+.nav_Catefory{
+    list-style-type: none;
+    float: left;
+    width: 127px;
+    padding-right: 15px;
+}
+.nav_list a{
+    display: block;
+    color: #333;
+    padding: 26px 10px 38px;
+}
+.nav_item a:hover{
+    color: #ff6700;
+}
